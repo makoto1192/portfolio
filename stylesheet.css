@@ -85,3 +85,13 @@ footer {
         flex-direction: column;
     }
 }
+/* style.cssの下に追加 */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
