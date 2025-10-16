@@ -1,1 +1,98 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 2rem;
+}
+.tagline {
+    color: #555;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 4rem;
+}
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.work-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 1.5rem);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.work-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .work-grid {
+        flex-direction: column;
+    }
+}
+/* style.cssの下に追加 */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
 
