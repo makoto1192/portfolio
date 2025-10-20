@@ -1,0 +1,99 @@
+:root {
+  --main-blue: #0078d7;
+  --text-dark: #222;
+  --text-light: #fff;
+  --font-sans: "Noto Sans JP", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ロゴの登場（フェードイン＋拡大） */
+.loader-logo {
+  width: 150px;
+  opacity: 0;
+  transform: scale(0.7);
+  animation: logoPop 1.2s ease-out forwards;
+}
+
+/* ロゴのアニメーション */
+@keyframes logoPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 円が広がってページが見える */
+@keyframes revealCircle {
+  0% {
+    clip-path: circle(0% at center);
+  }
+  100% {
+    clip-path: circle(150% at center);
+  }
+}
+
+/* 非表示化 */
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+/* ====== ロゴのドロップバウンド ====== */
+@keyframes dropBounce {
+  0% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ====== ホバーで拡大 ====== */
+.logo img {
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
