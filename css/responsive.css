@@ -9,6 +9,10 @@
   }
 
   .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero h1 span {
     font-size: 2rem;
   }
 }
@@ -74,7 +78,12 @@
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    margin-left: -2rem; /* 左寄せ */
+  }
+
+  .hero h1 span {
+    font-size: 1.2rem; /* “×” のバランスを調整 */
   }
 
   .hero p {
@@ -89,5 +98,19 @@
   footer p {
     font-size: 0.8rem;
     text-align: center;
+  }
+}
+/* -------------------- スマホ小（420px以下） -------------------- */
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-left: -1.5rem; /* 左寄せ */
+  }
+
+  .hero h1 span {
+    font-size: 1.2rem; /* “×” のバランスを調整 */
+  }
+  .hero p {
+    font-size: 0.8rem;
   }
 }
