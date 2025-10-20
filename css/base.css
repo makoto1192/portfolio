@@ -52,16 +52,6 @@ ul {
   }
 }
 
-/* 円が広がってページが見える */
-@keyframes revealCircle {
-  0% {
-    clip-path: circle(0% at center);
-  }
-  100% {
-    clip-path: circle(150% at center);
-  }
-}
-
 /* 非表示化 */
 .page-loader.hidden {
   opacity: 0;
