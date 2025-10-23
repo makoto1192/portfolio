@@ -1,0 +1,65 @@
+/* h1タグ　アクセシビリティ用: 画面に表示しないがスクリーンリーダーには読ませる */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.Profile,
+.Career {
+  padding: 80px 100px;
+}
+
+.Profile h2,
+.Career h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+.Career ul {
+  list-style-type: disc; /* 丸に指定 */
+  padding-left: 40px; /* 左余白を確保 */
+  text-align: left; /* 中央揃えを解除して左に配置 */
+}
+
+/* -------------------- スマホ（820px以下） -------------------- */
+@media (max-width: 820px) {
+  .Profile,
+  .Career {
+    padding: 50px 40px;
+  }
+  .Profile h2,
+  .Career h2 {
+    font-size: 2.2rem;
+  }
+  .Profile p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .Career ul {
+    padding-left: 25px;
+  }
+}
+/* -------------------- スマホ小（420px以下） -------------------- */
+@media (max-width: 420px) {
+  .Profile,
+  .Career {
+    padding: 40px 30px;
+  }
+  .Profile h2,
+  .Career h2 {
+    font-size: 1.8rem;
+  }
+  .Profile p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .Career ul {
+    padding-left: 15px;
+  }
+}
