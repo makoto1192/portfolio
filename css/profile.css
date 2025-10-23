@@ -23,26 +23,70 @@
 
 .Career ul {
   list-style-type: disc; /* 丸に指定 */
-  padding-left: 40px; /* 左余白を確保 */
+  padding-left: 40px;
   text-align: left; /* 中央揃えを解除して左に配置 */
 }
 
-/* -------------------- スマホ（820px以下） -------------------- */
-@media (max-width: 820px) {
+.profile-intro {
+  flex-shrink: 0; /* 親要素が小さくなっても潰れないように */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: nowrap; /* 横並びを維持 */
+}
+
+.profile-intro img {
+  width: 200px;
+  height: 200px; /* widthと同じ値に */
+  border-radius: 50%;
+  object-fit: cover; /* 全体をカバーするように拡大 */
+  object-position: center top; /* 上を少し優先して見せる */
+}
+
+.profile-intro h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.profile-intro p {
+  font-size: 1.2rem;
+}
+
+/* -------------------- タブレット用（768px以下） -------------------- */
+@media (max-width: 768px) {
   .Profile,
   .Career {
     padding: 50px 40px;
   }
-  .Profile h2,
+  .Profile h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
   .Career h2 {
     font-size: 2.2rem;
   }
+
   .Profile p {
     font-size: 1rem;
     line-height: 1.5;
   }
   .Career ul {
     padding-left: 25px;
+  }
+  .profile-intro {
+    flex-direction: column; /* スマホで縦並びにする */
+    align-items: center; /* 中央揃え */
+  }
+
+  .profile-intro img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-intro h3 {
+    font-size: 1.5rem;
   }
 }
 /* -------------------- スマホ小（420px以下） -------------------- */
@@ -55,11 +99,18 @@
   .Career h2 {
     font-size: 1.8rem;
   }
+  .profile-intro h3 {
+    font-size: 1.2rem;
+  }
   .Profile p {
     font-size: 0.95rem;
     line-height: 1.4;
   }
   .Career ul {
     padding-left: 15px;
+  }
+  .profile-intro img {
+    width: 140px;
+    height: 140px;
   }
 }
