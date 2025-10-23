@@ -44,7 +44,7 @@
   text-align: center;
 }
 
-/* タブレット用（768px以下） */
+/* -------------------- タブレット用（768px以下） -------------------- */
 @media screen and (max-width: 768px) {
   .skills {
     padding: 60px 40px;
@@ -76,7 +76,7 @@
   }
 }
 
-/* スマホ用（480px以下） */
+/* -------------------- スマホ小（480px以下） -------------------- */
 @media screen and (max-width: 480px) {
   .skills {
     padding: 40px 20px;
