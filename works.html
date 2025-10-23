@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/works.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div id="overlay" class="overlay"></div>
       <div class="logo">
-        <img src="images/Logo.png" alt="ロゴ" width="500" height="100" />
+        <a href="index.html"
+          ><img src="images/homelogo.png" alt="ロゴ" width="500" height="100"
+        /></a>
       </div>
       <!-- ハンバーガーメニュー -->
       <div class="menu-icon" id="menu-toggle">
@@ -28,8 +30,8 @@
       <nav class="nav" id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="works.html">Works</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="works.html" class="active">Works</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -37,17 +39,41 @@
     </header>
 
     <main>
-      <section
-        class="hero"
-        style="
-          text-align: center;
-          padding: 100px 20px;
-          background-color: var(--main-blue);
-          color: var(--text-light);
-        "
-      >
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px">Design × Code</h1>
-        <p>Webアプリ開発の経験を活かして、デザインにも挑戦しています。</p>
+      <section class="works">
+        <h1>Works</h1>
+        <h2>Engineer</h2>
+        <ul class="engineer-list">
+          <li>官公庁向けシステム刷新プロジェクト</li>
+          <li>飲食店向けアプリ開発</li>
+          <li>不動産ファンド用アプリ開発</li>
+          <li>保険会社向けWEBアプリシステム運用</li>
+          <li>健康食品会社顧客対応システム基盤開発</li>
+        </ul>
+        <h2>Designer</h2>
+        <div class="designer-works">
+          <div class="work-item">
+            <a
+              href="https://ladyluck-cookie.net/"
+              target="_blank"
+              class="work-link"
+            >
+              <div class="image-box image-ladyluck"></div>
+              <p class="client">ladyluck-cookie様</p>
+              <p>ロゴデザイン、サイトデザイン</p>
+            </a>
+          </div>
+          <div class="work-item">
+            <a
+              href="https://makoto-hashimoto.com/"
+              target="_blank"
+              class="work-link"
+            >
+              <div class="image-box image-promo"></div>
+              <p class="client">サイト制作宣伝用サイト</p>
+              <p>ロゴデザイン、サイトデザイン</p>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
