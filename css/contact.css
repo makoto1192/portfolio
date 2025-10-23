@@ -1,0 +1,69 @@
+.contact {
+  padding: 80px 100px;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.contact {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5002;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact button:hover {
+  background-color: #ff0202;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 40px 20px;
+  }
+
+  .contact h1 {
+    font-size: 3rem;
+  }
+}
+.contact p {
+  font-size: 1rem;
+}

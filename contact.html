@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div id="overlay" class="overlay"></div>
       <div class="logo">
-        <img src="images/Logo.png" alt="ロゴ" width="500" height="100" />
+        <a href="index.html"
+          ><img src="images/homelogo.png" alt="ロゴ" width="500" height="100"
+        /></a>
       </div>
       <!-- ハンバーガーメニュー -->
       <div class="menu-icon" id="menu-toggle">
@@ -28,26 +30,50 @@
       <nav class="nav" id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
           <li><a href="works.html">Works</a></li>
           <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section
-        class="hero"
-        style="
-          text-align: center;
-          padding: 100px 20px;
-          background-color: var(--main-blue);
-          color: var(--text-light);
-        "
-      >
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px">Design × Code</h1>
-        <p>Webアプリ開発の経験を活かして、デザインにも挑戦しています。</p>
+      <section class="contact">
+        <h1>Contact</h1>
+        <p>
+          ご質問やご依頼などがございましたら、以下のフォームからお気軽にご連絡ください。
+        </p>
+        <form action="https://formspree.io/f/xnngkyvg" method="POST">
+          <label for="name">名前</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="例：橋本 眞"
+            required
+          />
+
+          <label for="email">メールアドレス</label>
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            placeholder="example@gmail.com"
+            required
+          />
+
+          <label for="message">お問い合わせ内容</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="内容を入力してください"
+            required
+          ></textarea>
+
+          <button type="submit">送信</button>
+        </form>
       </section>
     </main>
 
