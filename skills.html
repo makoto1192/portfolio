@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div id="overlay" class="overlay"></div>
       <div class="logo">
-        <img src="images/Logo.png" alt="ロゴ" width="500" height="100" />
+        <a href="index.html"
+          ><img src="images/homelogo.png" alt="ロゴ" width="500" height="100"
+        /></a>
       </div>
       <!-- ハンバーガーメニュー -->
       <div class="menu-icon" id="menu-toggle">
@@ -28,26 +40,47 @@
       <nav class="nav" id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
           <li><a href="works.html">Works</a></li>
-          <li><a href="skills.html">Skills</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section
-        class="hero"
-        style="
-          text-align: center;
-          padding: 100px 20px;
-          background-color: var(--main-blue);
-          color: var(--text-light);
-        "
-      >
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px">Design × Code</h1>
-        <p>Webアプリ開発の経験を活かして、デザインにも挑戦しています。</p>
+      <section class="skills">
+        <h1>Skills</h1>
+        <div class="skill-list">
+          <ul>
+            <li>コーディング：HTML / CSS / JavaScript / TypeScript /jQuery</li>
+            <li>フレームワーク：React / Angular / Vue.js</li>
+            <li>デザインツール：Photoshop /Illustrator / Figma / WordPress</li>
+            <li>その他：Github / Visual Studio Code</li>
+          </ul>
+        </div>
+        <h2>Design</h2>
+        <h3>LOGO</h3>
+        <ul class="logo-list">
+          <li>
+            <img
+              src="images/design02-before.jpg"
+              width="300"
+              height="250"
+              alt=""
+            />
+          </li>
+          <li><img src="image2.jpg" width="300" height="250" alt="" /></li>
+          <li><img src="image3.jpg" width="300" height="250" alt="" /></li>
+        </ul>
+        <p class="tool-illustrator">使用ツール：Illustrator</p>
+        <h3>BANNER</h3>
+        <ul class="banner-list">
+          <li><img src="image1.jpg" width="300" height="250" alt="" /></li>
+          <li><img src="image2.jpg" width="300" height="250" alt="" /></li>
+          <li><img src="image3.jpg" width="300" height="250" alt="" /></li>
+        </ul>
+        <p>使用ツール：Photoshop</p>
       </section>
     </main>
 

@@ -1,0 +1,108 @@
+.skills {
+  padding: 80px 100px;
+  margin: 0 auto;
+}
+
+.skills h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 2.4;
+  font-size: 1.1rem;
+  margin-bottom: 180px;
+}
+
+.skills h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills h3 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.banner-list,
+.logo-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.skills p {
+  margin-top: 10px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+/* タブレット用（768px以下） */
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 60px 40px;
+  }
+
+  .skills h1,
+  .skills h2 {
+    font-size: 3rem;
+  }
+
+  .skills h3 {
+    font-size: 2rem;
+  }
+
+  .skill-list {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 120px;
+  }
+
+  .study-list {
+    flex-direction: column; /* 縦に並べる */
+    gap: 30px;
+    align-items: center;
+  }
+
+  .skills p {
+    margin-bottom: 100px;
+  }
+}
+
+/* スマホ用（480px以下） */
+@media screen and (max-width: 480px) {
+  .skills {
+    padding: 40px 20px;
+  }
+
+  .skills h1,
+  .skills h2 {
+    font-size: 2.2rem;
+  }
+
+  .skills h3 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .skill-list {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 120px;
+  }
+
+  .study-list {
+    gap: 20px;
+  }
+
+  .skills p {
+    margin-bottom: 60px;
+  }
+}
