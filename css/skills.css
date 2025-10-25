@@ -199,4 +199,7 @@
   .skills p {
     margin-bottom: 60px;
   }
+  .logo-list {
+    gap: 60px;
+  }
 }
