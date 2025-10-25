@@ -71,6 +71,10 @@ const images = document.querySelectorAll(
 images.forEach((img) => {
   img.style.cursor = "pointer"; // カーソルをポインターに
   img.addEventListener("click", (e) => {
+    // スマホならモーダルを開かない（480px以下）
+    if (window.innerWidth <= 480) return;
+
+    // クリックされた要素がimgタグかどうか確認
     let targetImg = img.tagName === "IMG" ? img : img.querySelector("img");
     if (!targetImg) return;
 
