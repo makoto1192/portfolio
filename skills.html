@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/skills.css" />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- Swiper JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
-      defer
-    ></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -59,23 +48,30 @@
             <li>その他：Github / Visual Studio Code</li>
           </ul>
         </div>
-        <h2>Design</h2>
+        <!-- <h2>Design</h2> -->
 
-        <h3>BANNER</h3>
+        <h2>BANNER</h2>
         <ul class="banner-list">
           <li>
             <img
-              src="images/design02-before.jpg"
+              src="images/design02-2before.jpg"
               width="300"
               height="250"
-              alt=""
+              alt="Web人材紹介バナー"
             />
           </li>
-          <li><img src="image2.jpg" width="300" height="250" alt="" /></li>
+          <li>
+            <img
+              src="images/design03-4before.jpg"
+              width="300"
+              height="250"
+              alt="保育士紹介バナー"
+            />
+          </li>
           <li><img src="image3.jpg" width="300" height="250" alt="" /></li>
         </ul>
         <p>使用ツール：Photoshop</p>
-        <h3>LOGO</h3>
+        <h2>LOGO</h2>
         <ul class="logo-list">
           <li>
             <div class="logo-card">
@@ -113,6 +109,12 @@
         </ul>
         <p class="tool-illustrator">使用ツール：Illustrator</p>
       </section>
+      <!-- モーダル（Lightbox） -->
+      <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="" />
+        <p id="caption"></p>
+      </div>
     </main>
 
     <footer>

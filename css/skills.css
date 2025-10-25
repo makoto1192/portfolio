@@ -20,14 +20,8 @@
 .skills h2 {
   font-size: 4rem;
   margin-bottom: 30px;
+  margin-top: 150px;
   text-align: center;
-}
-
-.skills h3 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
-  position: relative;
 }
 
 .banner-list,
@@ -67,9 +61,86 @@
 }
 
 .skills p {
-  margin-top: 10px;
-  margin-bottom: 60px;
+  margin-top: 30px;
   text-align: center;
+  font-size: 18px;
+}
+
+/* ==== Lightbox モーダル ==== */
+.modal {
+  display: none; /* 初期は非表示 */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* ロゴモーダルなら白背景 */
+.modal.logo-modal {
+  background-color: rgba(255, 255, 255, 0.95);
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ===== ロゴ専用の表示 ===== */
+.logo-modal {
+  background-color: rgba(255, 255, 255, 0.95); /* 白背景に変更 */
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.logo-modal .modal-content {
+  width: 50%; /* 横幅を50%に固定 */
+  height: 20%; /* 高さ調整 */
+  max-height: 80vh; /* 高さが画面をはみ出さないように */
+  box-shadow: none;
+}
+
+.logo-modal #caption {
+  color: #333; /* 黒文字で見やすく */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #ff0000;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#caption {
+  display: none;
 }
 
 /* -------------------- タブレット用（768px以下） -------------------- */
@@ -83,9 +154,9 @@
     font-size: 3rem;
   }
 
-  .skills h3 {
+  /* .skills h3 {
     font-size: 2rem;
-  }
+  } */
 
   .skill-list {
     font-size: 1rem;
@@ -113,11 +184,6 @@
   .skills h1,
   .skills h2 {
     font-size: 2.2rem;
-  }
-
-  .skills h3 {
-    font-size: 1.6rem;
-    margin-bottom: 16px;
   }
 
   .skill-list {
